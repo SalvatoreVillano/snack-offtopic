@@ -10,6 +10,7 @@ btn.addEventListener('click', function() {
     numeriGenerati = Math.floor(Math.random() * 100) + 1; 
     arrayGenerato.push(numeriGenerati);
     }
-    arrayStampato.innerHTML = `Il tuo array è il seguente: ${arrayGenerato} <br>`
+    arrayStampato.innerHTML += `Il tuo array è il seguente: ${arrayGenerato} <br>`
+    arrayGenerato = [];
     }
 });
