@@ -10,10 +10,13 @@ btn.addEventListener('click', function() {
     numeriGenerati = Math.floor(Math.random() * 50); 
     arrayGenerato.push(numeriGenerati);
     }
-    arrayStampato.innerHTML = 'Il tuo array generato casualmente è: ' + arrayGenerato;
+    arrayStampato.innerHTML = `Il tuo array è il seguente: ${arrayGenerato} <br>`
+    btn.classList.add('d-none');
 });
 
 ordina.addEventListener('click', function() {
     arrayGenerato.sort(function(a, b){return a-b});
-    arrayOrdinato.innerHTML = 'Il tuo array generato è stato ordinato dal piu piccolo al piu grande: ' + arrayGenerato;
+    arrayOrdinato.innerHTML = `Il tuo array ordinato è il seguente: ${arrayGenerato} <br>`
+    ordina.classList.add('d-none');
+
 });
